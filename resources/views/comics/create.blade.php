@@ -32,7 +32,7 @@
                 </div>
                 <div class="mb-3">
                 <label for="price" class="form-label">price</label>
-                <input type="number" class="form-control" id="price" name="price">
+                <input type="number" step="0.01" class="form-control" id="price" name="price">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Save</button>
