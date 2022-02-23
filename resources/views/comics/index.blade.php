@@ -10,7 +10,7 @@
             <h1 class="h1">Admin - All Comics</h1>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col mb-2">
                 <a href="{{ route('comics.create') }}" class="btn btn-primary">Add new comic</a>
             </div>
         </div>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 {{ $comics->links() }}
             </div>
         </div>

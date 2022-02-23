@@ -16,7 +16,7 @@ class ComicSeeder extends Seeder
         for ($i=0; $i < 50; $i++) { 
             $comic = new Comic();
             $comic->title = $faker->words(3, true);
-            $comic->author = $faker->words(2, true);
+            $comic->author = $faker->name();
             $comic->price = $faker->randomFloat(2, 10, 30);
             $comic->genre = $faker->words(3, true);
             $comic->description = $faker->paragraph(5, false);
