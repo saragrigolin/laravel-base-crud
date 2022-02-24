@@ -16,22 +16,25 @@
         </div>
         <div class="row">
             <div class="col">
-                <table class="table table-dark">
+                <table class="table table-info">
                     <thead>
                         <tr class="table-dark">
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Price</th>
-                            <th>Actions</th>
+                            <th class="w-40">Title</th>
+                            <th class="w-30">Author</th>
+                            <th class="w-15">Price</th>
+                            <th class="w-15">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                     @foreach ($comics as $comic)
                         <tr>
-                            <td>{{ $comic->title }}</td>
+                            <td class="text-capitalize">{{ $comic->title }}</td>
                             <td>{{ $comic->author }}</td>
                             <td>{{ $comic->price }} €</td>
-                            <td><a class="btn btn-primary" href="{{ route('comics.show', $comic) }}">View</a></td>
+                            <td>
+                                <a class="btn btn-primary me-3" href="{{ route('comics.show', $comic) }}">View</a>
+                                <a class="btn btn-warning" href="{{ route('comics.edit', $comic) }}">Edit</a>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

@@ -12173,3 +12173,15 @@ fieldset:disabled .btn {
   }
 }
 
+.w-40 {
+  width: 40%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
